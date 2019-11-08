@@ -5,23 +5,32 @@
   Use this pattern to create your objects: 
   object name, diet, weight, length, period
 */
-
+function dinosaurs (name, diet, weight, length, period){
+  const dinosaur = {
+  name: name,
+  diet: diet,
+  weight: weight,
+  length: length,
+  period: period
+  };
+  return dinosaur;
+}
 // tyrannosaurus, carnivorous, 7000kg, 12m, Late Cretaceous
-
+let tyrannosaurus = dinosaurs('tyrannosaurus', 'carnivorous', '7000kg', '12m', 'Late Cretaceous');
 // stegosaurus, herbivorous, 2000kg, 9m, Late Jurassic
-
+let stegosaurus = dinosaurs('stegosaurus', 'herbivorous', '2000kg', '9m', 'Late Jurassic');
 // velociraptor, carnivorous, 15kg, 1.8m, Late Cretaceous
 
 // Using your dinosaur objects, log answers to these questions:
 
 // How much did tyrannosaurus weigh?
-console.log();
+console.log(tyrannosaurus.weight);
 
 // What was the diet of a velociraptor?
 console.log();
 
 // How long was a stegosaurus?
-console.log();
+console.log(stegosaurus[3]);
 
 // What time period did tyrannosaurus live in?
 console.log();
